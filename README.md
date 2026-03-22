@@ -1,8 +1,8 @@
-# 📌 Complaint Management System (Basic)
+#  login storing in local storage
 
-## 🚀 Project Overview
+##  Project Overview
 
-This is a simple **Complaint Management System UI** built using:
+This is a simple **Login System UI** built using:
 
 * HTML
 * CSS
@@ -27,7 +27,7 @@ It allows users to:
 
 ---
 
-## 📂 Project Structure
+## ➡️ Project Structure
 
 project-folder/
 │
@@ -39,7 +39,7 @@ project-folder/
 
 ---
 
-## ✨ Features
+## ➡️ Features
 
 * User Signup with:
   * Username
@@ -52,7 +52,7 @@ project-folder/
 
 ---
 
-## ⚙️ How It Works
+## ➡️ How It Works
 
 ### 🔹 Signup
 
@@ -67,7 +67,7 @@ project-folder/
 
 ---
 
-## ⚠️ Limitations
+## ➡️ Limitations
 
 * Stores only one user (overwrites previous data)
 * No backend (data stored only in browser)
@@ -75,7 +75,7 @@ project-folder/
 
 ---
 
-## 🧠 Future Improvements
+## ➡️ Future Improvements
 
 * Store multiple users
 * Add database (Firebase / MySQL)
@@ -85,13 +85,13 @@ project-folder/
 
 ---
 
-## 💡 Author
+## ➡️ Author
 
 👨‍💻 Developed by **Nishanth**
 
 ---
 
-## ⭐ Support
+## ➡️ Support
 
 If you like this project:
 
