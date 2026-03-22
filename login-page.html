@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(to left,black,rgb(2, 2, 101));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form{
+            min-height:65vh;
+            width: 30%;
+            background-color:rgb(87, 87, 226);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            box-shadow: 0 0 6px whitesmoke;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        
+        .in{
+            height: 40px;
+            text-align: center;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 12px;
+            box-shadow: 0 0 3px whitesmoke;
+            width: 50%;
+            
+        }
+        #inn{
+            background-color: rgb(8,8,96);
+            color: aliceblue;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input class="in" type="text" name="fname" placeholder="Enter username">
+        <input class="in" type="password" name="pass" placeholder="Enter password">
+        <button class="in" id="inn" onclick="login()">Login in</button>
+    </div>
+    <script>
+function login(){
+    let user = document.querySelector('input[name="fname"]').value;
+    let pass = document.querySelector('input[name="pass"]').value;
+
+    let storedUser = localStorage.getItem("username");
+    let storedPass = localStorage.getItem("password");
+
+    if(user === storedUser && pass === storedPass){
+        alert("Login Successful!");
+
+        // go to dashboard
+        window.location.href = "dashboard.html";
+    }else{
+        alert("Invalid Username or Password");
+    }
+}
+</script>
+</body>
+</html>
